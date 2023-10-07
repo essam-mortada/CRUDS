@@ -90,7 +90,7 @@ let createproductobject =()=>{
        date : formattedDate,
     }
    checkvalidation();
-    checkvalidationcost();
+  //  checkvalidationcost();
 if (validation==true) {
     if (mood == "create") {
         //create
