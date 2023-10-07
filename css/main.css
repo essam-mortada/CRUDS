@@ -1,0 +1,159 @@
+body{
+    background-color:#FFF5E0;
+}
+.container{
+    background-color: #141E46;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    
+}
+.container h1{
+    text-align: center;
+    padding-top: 30px;
+    color:#C70039;
+}
+
+.form-group{
+    width: 90%;
+    margin: auto;
+    background-color: #3b5bda;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+#product{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin: 20px 50px;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+#department{
+    width: 40%;
+    color: #C70039;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin: 20px ;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#count{
+    width: 40%;
+}
+#btn{
+    width: 30% ;
+    padding: 10px 0px;
+    background-color: #141E46;
+    color: #FFF5E0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: bold;
+    margin: auto;
+}
+#btn:hover{
+    background-color:#860127;
+}
+hr{
+    width: 90%;
+    background-color: #141E46;
+    margin-bottom: 20px;
+}
+.form-group input{
+    width: 18%;
+    padding: 10px 0px;
+    border-radius: 20px;
+    margin: 30px 0px;
+    color: #C70039;
+    text-align: center;
+    font-weight: bold;
+}
+.form-group input:focus{
+    border: #C70039 1px solid;
+}
+.form-group input::placeholder{
+    color: #C70039;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container2{
+    background-color: #141E46;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px 0px; 
+    align-items: center;
+    text-align: center;
+}
+.form-group table{
+    margin: 10px 0px;
+    width: 90%;
+    color: #FFF5E0;
+    text-align: center;
+    font-weight: bold;
+}
+.form-group table thead{
+    margin-bottom:20px ;
+}
+.danger{
+    background-color: red;
+    color: #FFF5E0;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.danger:hover{
+    background-color: rgb(148, 2, 2);
+}
+.none{
+    display: none;
+}
+.dangeri{
+    font-size: 25px;
+    color: rgb(194, 6, 6);
+    cursor: pointer;
+}
+.edit{
+    font-size: 25px;
+    cursor: pointer;
+    color:rgb(9, 197, 9);
+
+}
+.modal-title{
+    color: #141E46;
+}
+.modal-body{
+    color: #3b5bda;
+}
+.btn{
+    background-color: white;
+    color: #141E46;
+}
+
+
+@media (max-width:950px) {
+    .form-group input{
+        width: 90%;
+    }
+    #count{
+        width: 90%;
+    }
+    #department{
+        width: 90%;
+    }
+    #btn{
+        width: 50%;
+    }
+}

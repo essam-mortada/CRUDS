@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+ </head>
+ <body>
+    <div class="container">
+        <h1>Pharmacy System</h1>
+        <div class="row">
+            <div class="form-group">
+                <input type="text" name="product" placeholder="product name" id="product"><br>
+                <hr>
+                <input type="text" name="price" placeholder="price" id="price">
+                <input type="text" name="tax" placeholder="tax%" id="tax">
+                <input type="text" name="delivery" placeholder="delivery" id="delivery">
+                <input type="text" name="discount" placeholder="discount" id="discount">
+                <input type="text" name="total" readonly placeholder="total" id="total">
+                <select name="" id="department" >
+                    <option value="" hidden>select department</option>
+                    <option value="medicine">medicine</option>
+                    <option value="skin care">skin care</option>
+                    <option value="additional products">additional products</option>
+                </select>
+                <input type="number" name="count" placeholder="count" id="count">
+                <button type="submit" id="btn">Add Product</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <button class="danger none">Delete All</button>
+        <div class="form-group">
+            <table>
+            <thead>
+                <th>ID</th>
+                <th>Product</th>
+                <th>total price</th>
+                <th></th>
+                <th colspan="2">Action</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            </table>
+        </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">product info</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+ </body>
+ </html>
