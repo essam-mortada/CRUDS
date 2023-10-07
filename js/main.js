@@ -25,6 +25,7 @@ let checkvalidation=()=>{
         }
         if(counter == costinputs.length){
             validation = false;
+            alert("please fill all data.")
         }else{
             validation = true;
         }
@@ -88,12 +89,12 @@ let createproductobject =()=>{
         department : department.value,
        date : formattedDate,
     }
-   
-    //checkvalidationcost();
+   checkvalidation();
+    checkvalidationcost();
 if (validation==true) {
     if (mood == "create") {
         //create
-        if (newproduct.count >1) {
+        if (newproduct.count >0) {
             for (let i = 1; i <= newproduct.count ; i++) {
                 allproducts.push(newproduct);          
             }
